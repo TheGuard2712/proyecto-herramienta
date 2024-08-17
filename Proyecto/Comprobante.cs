@@ -19,9 +19,15 @@ namespace Proyecto
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            Menu ventana = new Menu();
+            frmProducto ventana = new frmProducto();
             ventana.Show();
             this.Hide();
+        }
+
+        public decimal Total
+        {
+            get { return decimal.Parse(txtTotal.Text); }
+            set { txtTotal.Text = value.ToString("0.00"); }
         }
 
         private void btnEnviarPedido_Click(object sender, EventArgs e)
@@ -29,6 +35,9 @@ namespace Proyecto
 
         }
 
-      
+        private void Comprobante_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
