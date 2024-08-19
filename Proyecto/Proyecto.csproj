@@ -80,6 +80,7 @@
       <DependentUpon>Comprobante.cs</DependentUpon>
     </Compile>
     <Compile Include="Datos\Conexion.cs" />
+    <Compile Include="Datos\D_Comprobante.cs" />
     <Compile Include="Datos\D_Productos.cs" />
     <Compile Include="Entidades\E_Productos.cs" />
     <Compile Include="Form1.cs">
@@ -100,10 +101,21 @@
     <Compile Include="MenuRoky%27s.Designer.cs">
       <DependentUpon>MenuRoky%27s.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\Reportes\DS_Comprobante.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Comprobante.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\Reportes\DS_Reportes.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_Reportes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Reportes\frm_Rpt_Comprobante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Reportes\frm_Rpt_Comprobante.Designer.cs">
+      <DependentUpon>frm_Rpt_Comprobante.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Reportes\Frm_Rpt_Listado_pr.cs">
       <SubType>Form</SubType>
@@ -135,9 +147,13 @@
     <EmbeddedResource Include="MenuRoky%27s.resx">
       <DependentUpon>MenuRoky%27s.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Reportes\frm_Rpt_Comprobante.resx">
+      <DependentUpon>frm_Rpt_Comprobante.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Reportes\Frm_Rpt_Listado_pr.resx">
       <DependentUpon>Frm_Rpt_Listado_pr.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Reportes\Rpt_Comprobante.rdlc" />
     <EmbeddedResource Include="Presentacion\Reportes\Rpt_Listado_pr.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -152,6 +168,17 @@
       <DependentUpon>Reservacion.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Presentacion\Reportes\DS_Comprobante.xsc">
+      <DependentUpon>DS_Comprobante.xsd</DependentUpon>
+    </None>
+    <None Include="Presentacion\Reportes\DS_Comprobante.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Comprobante.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentacion\Reportes\DS_Comprobante.xss">
+      <DependentUpon>DS_Comprobante.xsd</DependentUpon>
+    </None>
     <None Include="Presentacion\Reportes\DS_Reportes.xsc">
       <DependentUpon>DS_Reportes.xsd</DependentUpon>
     </None>

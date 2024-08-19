@@ -33,5 +33,16 @@ namespace Proyecto.Properties {
                 return ((string)(this["cn"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SERVIDOR;Initial Catalog=DB_ROKYS;User ID=user_kc;Password=123456;Enc" +
+            "rypt=False")]
+        public string cnx {
+            get {
+                return ((string)(this["cnx"]));
+            }
+        }
     }
 }

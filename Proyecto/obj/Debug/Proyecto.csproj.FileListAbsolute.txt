@@ -82,3 +82,4 @@ C:\Users\kenny\Documents\tareas\proyecto herramientas\proyecto-herramienta-kenny
 C:\Users\kenny\Documents\tareas\proyecto herramientas\proyecto-herramienta-kenny\Proyecto\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\kenny\Documents\tareas\proyecto herramientas\proyecto-herramienta-kenny\Proyecto\obj\Debug\Proyecto.Presentacion.Reportes.Frm_Rpt_Listado_pr.resources
 C:\Users\kenny\Documents\tareas\proyecto herramientas\proyecto-herramienta-kenny\Proyecto\obj\Debug\Proyecto.csproj.Up2Date
+C:\Users\kenny\Documents\tareas\proyecto herramientas\proyecto-herramienta-kenny\Proyecto\obj\Debug\Proyecto.Presentacion.Reportes.frm_Rpt_Comprobante.resources

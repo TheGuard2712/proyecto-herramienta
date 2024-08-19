@@ -14,7 +14,7 @@ namespace Proyecto
 {
     public partial class frmProducto : Form
     {
-        
+        private string cargoUsuario;
         public frmProducto()
         {
             InitializeComponent();
@@ -95,7 +95,7 @@ namespace Proyecto
 
         private void btnSalir_Click(object sender, EventArgs e)
         {   
-            Menu ventana = new Menu();
+            Menu ventana = new Menu(cargoUsuario);
             ventana.Show();
             this.Hide();
         }

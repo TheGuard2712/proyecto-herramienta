@@ -194,6 +194,7 @@
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Boleta";
             this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // radioButton4
             // 
@@ -206,6 +207,7 @@
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "Factura";
             this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
             // 
             // cmbMedio_pago
             // 
