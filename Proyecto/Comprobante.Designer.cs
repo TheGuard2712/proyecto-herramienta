@@ -34,17 +34,17 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtIgv = new System.Windows.Forms.TextBox();
+            this.txtTotal = new System.Windows.Forms.TextBox();
+            this.txtCorreo = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtRazon_social = new System.Windows.Forms.TextBox();
+            this.txtRuc = new System.Windows.Forms.TextBox();
             this.btnEnviarPedido = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbMedio_pago = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label2
@@ -109,26 +109,26 @@
             this.label8.TabIndex = 13;
             this.label8.Text = "COMPROBANTE DE PAGO";
             // 
-            // textBox3
+            // txtIgv
             // 
-            this.textBox3.Location = new System.Drawing.Point(283, 277);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(174, 20);
-            this.textBox3.TabIndex = 15;
+            this.txtIgv.Location = new System.Drawing.Point(283, 277);
+            this.txtIgv.Name = "txtIgv";
+            this.txtIgv.Size = new System.Drawing.Size(174, 20);
+            this.txtIgv.TabIndex = 15;
             // 
-            // textBox4
+            // txtTotal
             // 
-            this.textBox4.Location = new System.Drawing.Point(283, 326);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(174, 20);
-            this.textBox4.TabIndex = 16;
+            this.txtTotal.Location = new System.Drawing.Point(283, 326);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(174, 20);
+            this.txtTotal.TabIndex = 16;
             // 
-            // textBox5
+            // txtCorreo
             // 
-            this.textBox5.Location = new System.Drawing.Point(283, 366);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(174, 20);
-            this.textBox5.TabIndex = 17;
+            this.txtCorreo.Location = new System.Drawing.Point(283, 366);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(174, 20);
+            this.txtCorreo.TabIndex = 17;
             // 
             // label9
             // 
@@ -140,20 +140,20 @@
             this.label9.TabIndex = 20;
             this.label9.Text = "Medio de Pago :";
             // 
-            // textBox1
+            // txtRazon_social
             // 
-            this.textBox1.Location = new System.Drawing.Point(283, 226);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(174, 20);
-            this.textBox1.TabIndex = 23;
+            this.txtRazon_social.Location = new System.Drawing.Point(283, 226);
+            this.txtRazon_social.Name = "txtRazon_social";
+            this.txtRazon_social.Size = new System.Drawing.Size(174, 20);
+            this.txtRazon_social.TabIndex = 23;
             // 
-            // textBox6
+            // txtRuc
             // 
-            this.textBox6.Location = new System.Drawing.Point(283, 182);
-            this.textBox6.MaxLength = 11;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(174, 20);
-            this.textBox6.TabIndex = 24;
+            this.txtRuc.Location = new System.Drawing.Point(283, 182);
+            this.txtRuc.MaxLength = 11;
+            this.txtRuc.Name = "txtRuc";
+            this.txtRuc.Size = new System.Drawing.Size(174, 20);
+            this.txtRuc.TabIndex = 24;
             // 
             // btnEnviarPedido
             // 
@@ -194,6 +194,7 @@
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Boleta";
             this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // radioButton4
             // 
@@ -206,43 +207,48 @@
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "Factura";
             this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
             // 
-            // comboBox1
+            // cmbMedio_pago
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbMedio_pago.FormattingEnabled = true;
+            this.cmbMedio_pago.Items.AddRange(new object[] {
             "DEBITO ",
             "CREDITO"});
-            this.comboBox1.Location = new System.Drawing.Point(283, 91);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(120, 21);
-            this.comboBox1.TabIndex = 29;
+            this.cmbMedio_pago.Location = new System.Drawing.Point(283, 91);
+            this.cmbMedio_pago.Name = "cmbMedio_pago";
+            this.cmbMedio_pago.Size = new System.Drawing.Size(120, 21);
+            this.cmbMedio_pago.TabIndex = 29;
             // 
             // Comprobante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(567, 525);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbMedio_pago);
             this.Controls.Add(this.radioButton4);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnEnviarPedido);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtRuc);
+            this.Controls.Add(this.txtRazon_social);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtCorreo);
+            this.Controls.Add(this.txtTotal);
+            this.Controls.Add(this.txtIgv);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Comprobante";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Comprobante";
+            this.Load += new System.EventHandler(this.Comprobante_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -255,16 +261,16 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtIgv;
+        private System.Windows.Forms.TextBox txtTotal;
+        private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtRazon_social;
+        private System.Windows.Forms.TextBox txtRuc;
         private System.Windows.Forms.Button btnEnviarPedido;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbMedio_pago;
     }
 }
