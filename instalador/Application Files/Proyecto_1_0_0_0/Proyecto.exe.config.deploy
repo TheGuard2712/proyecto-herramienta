@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+    </configSections>
+    <connectionStrings>
+        <add name="Proyecto.Properties.Settings.cn" connectionString="Data Source=SERVIDOR;Initial Catalog=DB_ROKYS;Persist Security Info=True;User ID=user_kc;Password=123456;Encrypt=False"
+            providerName="System.Data.SqlClient" />
+        <add name="Proyecto.Properties.Settings.cnx" connectionString="Data Source=SERVIDOR;Initial Catalog=DB_ROKYS;User ID=user_kc;Password=123456;Encrypt=False"
+            providerName="System.Data.SqlClient" />
+    </connectionStrings>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2" />
+    </startup>
+</configuration>
